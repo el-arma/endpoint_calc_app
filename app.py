@@ -7,8 +7,13 @@ from flask import Flask, request, jsonify
 # Step 1: Create an instance of the Flask class, which will manage the app:
 app = Flask(__name__)
 
+@app.route("/")
+def greet():
+    """Greeting route"""
+    return "Dear Guest welcome to the endpoint calculator."
+
 # Step 2: Define the route for the "/calculate" URL path that accepts GET requests:
-@app.route('/calculate', methods=['GET'])
+@app.route('/calculate', methods = ['GET'])
 
 def calc():
     """ This is a proper docstring"""

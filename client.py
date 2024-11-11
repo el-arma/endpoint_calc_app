@@ -3,15 +3,19 @@
 import requests
 
 # URL to send the GET request to
-url_root: str = 'http://127.0.0.1:5000/calculate?'
+url_root: str = 'http://127.0.0.1:5000/'
 
 test_cases: list = [
-    'op=sum&arg1=2&arg2=5',
-    'op=sub&arg1=99&arg2=101',
-    'op=mul&arg1=4&arg2=5',
-    'op=div&arg1=30&arg2=5',
-    'op=dggdfggdftggtgh&arg1=2&arg2=5',
-    'op=div&arg1=2&arg2=0']
+    # test main route:
+    '',
+    # test /calculate:
+    'calculate?op=sum&arg1=2&arg2=5',
+    'calculate?op=sub&arg1=99&arg2=101',
+    'calculate?op=sum&arg1=2&arg2=5',
+    'calculate?op=mul&arg1=4&arg2=5',
+    'calculate?op=div&arg1=30&arg2=5',
+    'calculate?op=dggdfggdftggtgh&arg1=2&arg2=5',
+    'calculate?op=div&arg1=2&arg2=0']
 
 def my_req_test(url_endpoint: str):
     """This is a valid doc string"""
