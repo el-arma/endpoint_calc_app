@@ -15,7 +15,9 @@ This project is a simple Flask API that performs basic arithmetic operations: ad
 1. Clone the repository:
     ```bash
     git clone https://github.com/el-arma/endpoint_calc_app
-    
+    ```
+
+   ```bash
     cd endpoint_calc_app
     ```
 
@@ -70,7 +72,7 @@ http://127.0.0.1:5000/calculate?op=div&arg1=10&arg2=5
 For a request like `http://127.0.0.1:5000/calculate?op=sum&arg1=10&arg2=5`, the response will be:
 
 ```json
-    "result": "10 + 5 = 15"
+    "10 + 5 = 15"
 ```
 
 ## License
