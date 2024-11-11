@@ -39,3 +39,6 @@ def calc():
 # Step 6: Run the Flask app if this script is executed directly:
 if __name__ == '__main__':
     app.run(debug = True)
+
+
+# this is a sample comment to test Github Actions for PyLint
