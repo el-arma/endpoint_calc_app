@@ -14,8 +14,9 @@ This project is a simple Flask API that performs basic arithmetic operations: ad
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/el-arma/endpoint_calc_app
+    
+    cd endpoint_calc_app
     ```
 
 2. Install dependencies:
@@ -28,7 +29,7 @@ This project is a simple Flask API that performs basic arithmetic operations: ad
     python app.py
     ```
 
-The application will start running on `http://127.0.0.1:5000`.
+The application will start running on `http://127.0.0.1:5000` (that means locally - only on your computer, on port 5000).
 
 ## Usage
 
