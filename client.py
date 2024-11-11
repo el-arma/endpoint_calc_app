@@ -1,5 +1,6 @@
+"""Module for testing API requests to a calculation service."""
+
 import requests
-"""This is a valid doc string"""
 
 # URL to send the GET request to
 url_root: str = 'http://127.0.0.1:5000/calculate?'
@@ -15,8 +16,8 @@ test_cases: list = [
 def my_req_test(url_endpoint: str):
     """This is a valid doc string"""
 
-    # Send GET request
-    response = requests.get(url_endpoint)
+    # Send GET request (timeout 5s)
+    response = requests.get(url_endpoint, timeout = 5)
 
     # Check if the request was successful
     if response.status_code == 200:
@@ -32,6 +33,7 @@ def my_req_test(url_endpoint: str):
 
 
 def main():
+    """This is a valid doc string"""
     for test_case in test_cases:
         full_url_case = f'{url_root}{test_case}'
         print(f'For: {full_url_case}')
@@ -40,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
